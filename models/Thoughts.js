@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
-const reactionSchema = require('./Reaction');
+const reaction = require('./Reaction');
 
-// Schema to create Student model
+// Schema to create Thoughts model
 const thoughtsSchema = new Schema(
   {
     thoughtText: {
@@ -12,13 +12,13 @@ const thoughtsSchema = new Schema(
     },
     createdAt: {
       type: Date,
-      default: new Date(),      
+      default: Date.now,      
     },
     username: {
       type: String,
       required: true,
     },
-    reactions: [reactionSchema],
+    reactions: [reaction],
   },
   {
     toJSON: {
@@ -28,12 +28,12 @@ const thoughtsSchema = new Schema(
   }
 );
 
-userSchema
+thoughtsSchema
 .virtual('reactionCount')
 .get( function() {
   return this.reactions.length;
 })
 
-const Student = model('student', studentSchema);
+const Thoughts = model('thoughts', thoughtsSchema);
 
-module.exports = Student;
+module.exports = Thoughts;
