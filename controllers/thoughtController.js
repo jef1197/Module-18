@@ -60,7 +60,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Update a course
+  // Update a thought
   async updateThought(req, res) {
     try {
       const thought = await Thoughts.findOneAndUpdate(
@@ -70,7 +70,7 @@ module.exports = {
       );
 
       if (!thought) {
-        res.status(404).json({ message: 'No course with this id!' });
+        res.status(404).json({ message: 'No thought with this id!' });
       }
 
       res.json(thought);
@@ -78,6 +78,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
+  // Create a reaction
   async createReaction(req, res) {
     try {
       const thought = await Thoughts.findOneAndUpdate(
@@ -97,6 +98,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
+  // Delete a Reaction
   async deleteReaction(req, res) {
     try {
       const thought = await Thoughts.findOneAndUpdate(

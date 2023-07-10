@@ -25,26 +25,25 @@ module.exports = {
       return res.status(500).json(err);
     }
   },
-  // Get a single student
+  // Get a single User
   async getSingleUser(req, res) {
     try {
       const user = await User.findOne({ _id: req.params.userId })
         .select('-__v');
 
       if (!user) {
-        return res.status(404).json({ message: 'No student with that ID' })
+        return res.status(404).json({ message: 'No User with that ID' })
       }
 
       res.json({
         user,
-        // grade: await grade(req.params.userId),
       });
     } catch (err) {
       console.log(err);
       return res.status(500).json(err);
     }
   },
-  // create a new student
+  // create a new user
   async createUser(req, res) {
     try {
       const user = await User.create(req.body);
@@ -53,7 +52,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Update a course
+  // Update a user
   async UpdateUser(req, res) {
     try {
       const user = await User.findOneAndUpdate(
@@ -63,7 +62,7 @@ module.exports = {
       );
 
       if (!user) {
-        res.status(404).json({ message: 'No course with this id!' });
+        res.status(404).json({ message: 'No user with this id!' });
       }
 
       res.json(user);
@@ -71,13 +70,13 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Delete a student and remove them from the course
+  // Delete a user 
   async deleteUser(req, res) {
     try {
       const user = await User.findOneAndRemove({ _id: req.params.userId });
 
       if (!user) {
-        return res.status(404).json({ message: 'No such student exists' });
+        return res.status(404).json({ message: 'No such user exists' });
       }
 
       res.json({ message: 'User successfully deleted' });
@@ -87,7 +86,7 @@ module.exports = {
     }
   },
 
-  // Add an assignment to a student
+  // Add a friend to a student
   async addFriend(req, res) {
     try {
       const user = await User.findOneAndUpdate(
@@ -107,7 +106,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Remove assignment from a student
+  // Remove friend from a student
   async deleteFriend(req, res) {
     try {
       const user = await User.findOneAndUpdate(

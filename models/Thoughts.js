@@ -28,6 +28,7 @@ const thoughtsSchema = new Schema(
   }
 );
 
+// Virtual to find total reactions on thoughts
 thoughtsSchema
 .virtual('reactionCount')
 .get( function() {

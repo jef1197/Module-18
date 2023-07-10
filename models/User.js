@@ -1,7 +1,6 @@
 const { Schema, model } = require('mongoose');
-// const thoughtsSchema = require('./Thoughts');
 
-// Schema to create Student model
+// Schema to create User model
 const userSchema = new Schema(
   {
     username: {
@@ -32,6 +31,7 @@ const userSchema = new Schema(
   }
 );
 
+// Virtual to find total friends on User
 userSchema
 .virtual('friendCount')
 .get( function() {
