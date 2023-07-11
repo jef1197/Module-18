@@ -7,6 +7,7 @@ This is the Module 18 Challenge for the boot camp. The project has been built fr
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Link to User Route Walkthroughs: https://www.awesomescreenshot.com/video/19045537?key=0448faf8dc8e4ffbfe47503ffd8d9d80
+
 Link to Thought Route Walkthroughs: https://www.awesomescreenshot.com/video/19045634?key=809cd802bf7fd84a1dbb06c52558e9d3
 
 ## Usage
