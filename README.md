@@ -6,6 +6,9 @@ This is the Module 18 Challenge for the boot camp. The project has been built fr
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+Link to User Route Walkthroughs: https://www.awesomescreenshot.com/video/19045537?key=0448faf8dc8e4ffbfe47503ffd8d9d80
+Link to Thought Route Walkthroughs: https://www.awesomescreenshot.com/video/19045634?key=809cd802bf7fd84a1dbb06c52558e9d3
+
 ## Usage
 
 1. User must start application by running 'npm run start' into terminal
@@ -16,10 +19,14 @@ This is the Module 18 Challenge for the boot camp. The project has been built fr
 6. use /api/users/:userId/friends/:friendId to add or delete a friend from a user / use /api/thoughts/:thoughtId/reactions/:reactionId to add or delete a reaction from a thought 
 
 Walkthrought Using User Routes
-[New Tab - Awesome Screenshot - Awesome Screenshot.webm](https://github.com/jef1197/Module-18/assets/48005017/8a1f562f-199e-417b-ab6e-28710772a87c)
+
+https://github.com/jef1197/Module-18/assets/48005017/18cedbfb-a391-4bec-b72e-ebc16bb6cd9a
+
 
 Walkthrought Using Thought Routes
-[New Tab - Awesome Screenshot - Awesome Screenshot - Awesome Screenshot.webm](https://github.com/jef1197/Module-18/assets/48005017/b47bbfdf-65cc-443f-ae93-b98db5f68f0a)
+
+https://github.com/jef1197/Module-18/assets/48005017/da7378c1-b151-4419-813d-736653a7cb8d
+
 
 ## License
  
