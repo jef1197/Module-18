@@ -16,8 +16,10 @@ This is the Module 18 Challenge for the boot camp. The project has been built fr
 6. use /api/users/:userId/friends/:friendId to add or delete a friend from a user / use /api/thoughts/:thoughtId/reactions/:reactionId to add or delete a reaction from a thought 
 
 Walkthrought Using User Routes
+[New Tab - Awesome Screenshot - Awesome Screenshot.webm](https://github.com/jef1197/Module-18/assets/48005017/8a1f562f-199e-417b-ab6e-28710772a87c)
 
 Walkthrought Using Thought Routes
+[New Tab - Awesome Screenshot - Awesome Screenshot - Awesome Screenshot.webm](https://github.com/jef1197/Module-18/assets/48005017/b47bbfdf-65cc-443f-ae93-b98db5f68f0a)
 
 ## License
  
