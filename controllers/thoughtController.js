@@ -56,6 +56,7 @@ module.exports = {
       if (!thought) {
         res.status(404).json({ message: 'No thought with that ID' });
       }
+      res.json({ message: 'Thought successfully deleted' });
     } catch (err) {
       res.status(500).json(err);
     }
