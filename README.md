@@ -1,4 +1,4 @@
-# Smart BlogsJO
+# Social Media DB
 
 ## Description
 
